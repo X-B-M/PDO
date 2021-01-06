@@ -1,8 +1,8 @@
-x1 = 15
-x2 = 30
-y1 = 28
-y2 = 41
-prnStr = "   "
+x1: int = 15
+x2: int = 30
+y1: int = 28
+y2: int = 41
+prnStr: str = "   "
 for i in range(x1, x2 + 1):
     prnStr += "%5d" % (i)
 print(prnStr)

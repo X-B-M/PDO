@@ -11,11 +11,11 @@ str_height, str_width = os.popen('stty size', 'r').read().split()
 height = int(str_height)
 width = int(str_width)
 
-tmp =y1 + height #максимальное значение y1
-tmp1=tmp*x1      #приблизительно большое значение x1
-tmp1_len=len(str(tmp1)) #ширина большого значения
-tmp2 = width//tmp1_len #примерно столько значений войдет на ширину экрана
-tmpMax=tmp*(x1+tmp2) #точное большое значение
+tmp =y1 + height             #максимальное значение y1
+tmp1=tmp*x1                  #приблизительно большое значение x1
+tmp1_len=len(str(tmp1))      #ширина большого значения
+tmp2 = width//tmp1_len       #примерно столько значений войдет на ширину экрана
+tmpMax=tmp*(x1+tmp2)         #уточнённое большое значение
 max_len = len(str(tmpMax))+1 #необходимая ширина одного столбца
 f = "%"+str(max_len)+"d"
 

@@ -24,7 +24,6 @@ i = x1
 while len(prnStr) <= width-max_len:
     prnStr += f % i
     i = i + 1
-prnStr=prnStr[:width]
 print(prnStr)
 
 for i in range(y1, y1 + height - 2):

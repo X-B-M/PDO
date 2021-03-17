@@ -18,6 +18,7 @@ def prn_line(offset_x):
 
 x = 0
 # x[0] = int(input("Введите X :"))
+os.popen('clear', 'w')
 while 1:
     x=prn_line(x)
     x = x + 1

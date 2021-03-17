@@ -13,6 +13,7 @@ def prn_line(offset_x):
     tmp_str = tmp_str + " " * (width - offset_x)
     print("\033[10;0H", end='')
     print(tmp_str)
+    print("\033[11;0H", offset_x)
     return offset_x
 
 
